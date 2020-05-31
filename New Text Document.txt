@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<style>
+			h1{
+				color:firebrick;
+				border-style:solid;
+				border-radius:10%;
+				font-family: "berlin sans fb";
+				width:50%;
+				position:relative;
+				left:25%;
+				text-align:center;
+			}
+			body{
+				background-image:url("../../IMAGES/bliss.jpg");
+				color:darkblue;
+			}
+		</style>
+		<title>
+			Template!
+		</title>
+
+	</head>
+	<body>
+		<h1>
+			<u> Introduction </u>
+		</h1>
+			<hr>
+		<h2>
+			<b>Unit 1</b>
+		</h2>
+		<p>
+			This unit focuses on basic computer and information science skills. Students identify hardware components, research ergonomic considerations, practice file management skills, access resources through local and wide area networks, and research the evolution of programming languages. They develop skills for success in the computer and information science environment. Students focus on the Computer and Information Science environment; students also examine respect for the environment and wise use of resources from a responsible perspective.
+		</p>
+			<hr>
+		<h2>
+			<b>Links</b>
+		</h2>
+		<p>
+			home link
+			next page link
+		</p>
+	</body>
+</hmtl>

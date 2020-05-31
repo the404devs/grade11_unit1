@@ -1,0 +1,155 @@
+<!--Kevin Cacorovski-->
+<!--2/24/2017-->
+<!--Unit 1: Processor-->
+<!--Here, I explain the operations of a processor and some key definitions to understand later content. I then give descriptions of executable programs, source programs, interpreter, and a compiler. And lastly, I compared the compiler and the interpreter together.-->
+<html>
+	<head>
+		<style>
+			h1{
+				color:
+					firebrick;
+				border-style:
+					solid;
+				border-radius:
+					10%;
+				font-family:
+					"berlin sans fb";
+				width:
+					50%;
+				position:
+					relative;
+				left:
+					25%;
+				text-align:
+					center;
+			}
+			body{
+				background-image:
+					url("../../IMAGES/bliss.jpg");
+				color:
+					darkblue;
+				font-family:
+					"comic sans ms";
+				background-color:
+					powderblue;
+			}
+		</style>
+		<title>
+			Unit 1: Processor
+		</title>
+
+	</head>
+	<body>
+		<h1>
+			<u>
+				Unit 1: Processor
+			</u>
+		</h1>
+		<hr>
+		<h2>
+			Electronic Operations of a Processor
+		</h2>
+		<!--Here is where my paragraph starts-->
+		<p>
+			When a program is running on a computer the processor is constantly performing very many, very tiny electronic operations. For example, one such operation reads one byte of data from main memory into the processor. Another operation tests if one of the bits in the byte is a "1" bit. Most processors are able to perform several hundred types of small operations like these.
+			<br>
+			<br>
+			Those are the only things that a processor can do. It has a small set of tiny electronic operations that it can to perform, and that is all. These little electronic operations are performed one at a time. But millions of them are performed per second. Millions of small operations can add up to a large and useful action.
+		</p>
+		<hr>
+		<h2>
+			Key Definitions
+		</h2>
+		<ul>
+		<!--Here is where my Points start-->
+			<li>
+				Each tiny electronic operations that a processor can perform is called a 
+				<b style ="font-size:18">machine operation</b>.
+				A processor (a "machine") performs these one at a time, but millions of them in a second.
+			</li>
+			<br>
+			<li>
+				A 
+				<b style ="font-size:18">machine instruction</b>
+				consists of several bytes in memory that tells the processor to perform one machine operation.
+			</li>
+		</ul>
+		<hr>
+		<h2>
+			Executable Program
+		</h2>
+		<p>
+			The collection of machine instructions in main memory is called a
+			<b style ="font-size:18">machine language program</b>
+			or (more commonly) an
+			<b style ="font-size:18">executable program</b>
+		<hr>
+		<h2>
+			Source Program
+		</h2>
+		<p>
+			A
+			<b style ="font-size:18">source program</b>
+			(or source file) is a text file that contains instructions written in a high level language. It can not be executed (made to run) by a processor without some intermediate steps.
+		<hr>
+		<h2>
+			Source Program to Compiler to Executable Program
+		</h2>
+		<p>
+			Because a source program can not be executed by a processor, it must be translated by a
+			<b style ="font-size:18">translator</b>
+			or in other words, a
+			<b style ="font-size:18">compiler</b>
+			in order for the processor to understand the instructions.
+			<br>
+			<br>
+			Here is a picture that shows what usually happens with programs written in "C"
+			<br>
+			<!--Here is where my my image is inserted-->
+			<img src = "../images/sp2c2ep.gif">
+		<hr>
+		<h2>
+			Interpreter
+		</h2>
+		<p>
+			Programs written in a high level language are never directly executed by the processor. You have already seen one way to execute such a program: use a translator to create a machine language program that can be executed directly.
+			<br>
+			<br>
+			Another way to is to use an
+			<b style ="font-size:18">interpreter</b>
+			for the language. An
+			<b style ="font-size:18">interpreter</b>
+			is a program that acts like a processor that can directly execute a high level language.
+			<br>
+			<br>
+			Here is a diagram:
+			<br>
+			<img src = "../images/sp2I2P.gif">
+		</p>
+		<hr>
+		<h2>
+			Compiler vs Interpreter
+		</h2>
+		<ul>
+			<li style ="font-size:20">Compiler:</li>
+				<ul>
+					<li>Faster than interpreter</li>
+					<li>To change something within the code of the program, you have to change it in the source program and compile it into another executable program to run</li>
+				</ul>
+			<li style ="font-size:20">Interpreter:</li>
+				<ul>
+					<li>Slower than compiler</li>
+					<li>To change something within the code of the program, just change it in the source program and you're done</li>
+				</ul>
+		</ul>
+		<hr>
+		<h2>
+			<b>Link To:</b>
+		</h2>
+		<a href="../index.html">Home Page</a>
+	</body>
+</hmtl>
+
+<!--Information gathered from cSharpNotes: ch04_2, ch04_3-->
+
+<!--https://www.w3schools.com/tags/att_li_type.asp-->

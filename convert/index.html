@@ -1,0 +1,183 @@
+<!--Jatin Hajatri
+	February 24, 2017
+	Unit 1: Conversions
+	This website describes how to convert binary, hex, and decimal 
+	to each other.-->
+<html>
+	<head>
+		<style>
+			h1{
+				color:firebrick;
+				border-style:solid;
+				border-radius:10%;
+				font-family: "berlin sans fb";
+				width:50%;
+				position:relative;
+				left:25%;
+				text-align:center;
+			}
+			body{
+				color:darkblue;
+				background-color: powderblue;	
+				font-family: "comic sans ms";
+
+			}
+		</style>
+		<!-- This style tag enhances the look of the website. The background is powderblue, the title is firebrick, and the text colour is dark blue. -->
+		<title>
+			Unit 1: Conversions
+		</title>
+	</head>
+	<body>
+		<h1>
+			<u> Conversions </u>
+		</h1>
+			<hr>
+		<h2>
+			<b>Converting Binary to Decimal to Hex.</b>
+		</h2>
+		<p>
+			Many computers can understand three types of codes: Decimal, Binary, and Hexadecimal. Each with a different base number system. 
+			<h3> Decimal </h3>
+			Decimal number systems consist of numbers from 0-9. This is a base 10 number system. 
+
+			<h3> Binary </h3>
+			Binary number systems consist of 0s and 1s. Since it has only two digits it is a base 2 number system. 
+			<br>
+			Each digits is a bit. 4 bits together are called a "nybble". 8 numbers together are one byte or two nybbles.
+
+
+			<h3> Hexadecimal </h3>
+			Unlike decimal, hexadecimal has a base 16 number system. After 9, the numbers from 10-15 are substituted by letters A-F. 
+			<br>
+			<h3> How to convert?</h3>
+			To convert each other, there's mathematical steps we have to take.
+			<br>
+			<h4>Binary to Decimal:</h4> To convert from binary to decimal, you use the base 2 number system mentioned earlier. 
+			<br>
+			From right to left, you write  2^0, 2^1, and onwards.  
+			<br>
+			You multiply them by the corresponding digits, and then add them togther.
+			<br>
+			For example, 1001 is 1 x 2^0 + 0 x 2^1 + 0 x 2^2 + 1 x 2^3.
+			<br>
+			If you know bedmas, you do multiplication first, which leaves you with:
+			<br>
+			1 + 8 = 9.
+			<br>
+			Therefore, 1001 is 9.
+
+			<h4>Hex to Decimal</h4>
+			To convert from hex to decimal, you use the base 16 number system. 
+			<br>
+			You read from right to left and write 16^0, 16^1, and onwards.
+			<br>
+			You multiply them by the corresponding digits, and then add them togther.
+			<br>
+			For example, 5A is 10 x 16^0 and 5 x 16^1. 
+			<br>
+			Remember that A-F is 10-15. So A = 10. 
+			<br>
+			The equation would be (10 x 1) + (5 x 16) 
+			<br>
+			The equation is 10 + 80 = 90.
+
+			<h4>Decimal to Binary</h4> 
+			To convert from decimal to binary, rather than multiplying as shown above, you use long division.  
+			<br>
+			You keep diving the number by 2, and the remainders are either 1 or 0. Each remainder you get, you add that digit. Make sure to keep putting them from right to left.
+			<br>
+			Let's use 12 as an example. 
+			<br>
+			<table border="1">
+			<tr>
+			<td>Number</td>
+			<td>12</td>
+			<td>6</td>
+			<td>3</td>
+			<td>1</td>
+
+
+			</tr>
+			<tr>
+			<td>Binary Digit (remainder) </td>
+			<td>0</td>
+			<td>00</td>
+			<td>100</td>
+			<td>1100</td>
+			</tr>
+			</table>
+
+			<br>
+			An alternate way to do it is to remember the value of each position in binary.
+			<br>
+			For example, 1111. The total is 15. The value from right to left for each 
+			<br>
+			placement is 1, 2, 4, and 8. With 8 digits, the numbers add up to 256. 
+			<br>
+			And the numbers continue to 16, 32, 64, 128.  All you have to do is place a "1" at the placements that add up to the decimal. 
+			<br>
+			Let's use the number 45. 
+			<br>
+			0 0 0 0 0 0 0 0
+			<br>
+			We can eliminate 64 and 128, since those numbesr are too high. But we can use 32.
+			<br>
+			0 0 1 0 0 0 0 0
+			<br>
+			Now 16 + 32 = 48. So it's too high. 32 + 8 + 4 + 1 = 45. 
+			<br>
+			0 0 1 0 1 1 0 1	is the binary number for 45. 
+
+
+			<h4>Decimal to Hex</h4> 
+			To convert from decimal to hex, you use long division. Similar to decimal to binary. 
+			<br>
+			Only this time, you keep dividing by 16. Whichever number the remainder is, you use it. Right them from right to left.
+			<br>
+			Let's use 128 as an example. 
+			<br>
+	<table border="1">
+			<tr>
+			<td>Number</td>
+			<td>128</td>
+			<td>8</td>
+
+
+			</tr>
+			<tr>
+			<td>Hex Digit (remainder) </td>
+			<td>0</td>
+			<td>80</td>
+			</tr>
+			</table>
+
+			Since the remainder was 8, the hex number would be 80.
+
+
+			<h4>Binary to Hex</h4> 
+			To convert from binary to hex, you treat the two nybbles as seperate digits.
+			<br>
+			Since the maximum digit in maximum is F, the binary digit 1111 is the maximum of 15. 
+			<br>
+			Let's use 1100 1011 as an example. 
+			<br>
+			If you convert each to decimal, the nybbles are 12 and 11. The hex digits for both are C and B. Therefore, the hex digit for 1100 1011 is CB. 
+
+		<h4>Hex to Binary</h4> 
+		To convert from hex to binary, it is the same as above but reversed. 
+			<br>
+		You put each hex digit as a nybble.
+			<br>
+			Let's use the hex digit 4A
+			<br>
+			4 in binary is 0100 and A (10) in binary is 1010.
+			<br>
+			Therefore, the binary digit would be 0100 1010.
+		</p>
+		<h2>
+			<b>Link To:</b>
+		</h2>
+		<a href="../index.html">Home Page</a>
+	</body>
+</html>
